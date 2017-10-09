@@ -19,7 +19,6 @@ function inicializaContadores() {
     campo.on("input", function () {
         var conteudo = campo.val();
         var qtdPalavras = conteudo.split(/\S+/).length -1;
-        console.log(qtdPalavras);
         $("#contador-palavras").text(qtdPalavras);
         $("#contator-caracteres").text(conteudo.length);
     });
@@ -50,10 +49,7 @@ function inicializaMarcadores(){
     var frase = $(".frase").text();
     campo.on("input", function () {
         var digitado = campo.val();
-
         var comparavel = frase.substr(0,digitado.length);
-        console.log(digitado);
-        console.log(comparavel);
 
         if(digitado == comparavel){
             campo.addClass("borda-green");
