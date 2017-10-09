@@ -20,3 +20,11 @@
 .borda-red{
     border: 3px solid red;
 }
+
+.placar{
+    display: none;
+}
+
+body{
+    overflow: scroll;
+}
