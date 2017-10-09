@@ -11,7 +11,7 @@ function inserePlacar() {
     corpoTabela.prepend(linha);
     $(".placar").slideDown(500);
     scrollPlacar();
-    
+
 }
 
 function scrollPlacar() {
