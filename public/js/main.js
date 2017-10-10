@@ -8,6 +8,11 @@ $(function() {
     inicializaMarcadores();
     $("#botao-reiniciar").click(reiniciaJogo);
     atualizaPlacar();
+
+    $("#usuarios").select({
+        create: true,
+        sortField: 'text'
+    })
 });
 
 function atualizaFrase() {
